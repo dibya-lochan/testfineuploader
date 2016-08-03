@@ -33,8 +33,7 @@ $_ENV['AWS_SERVER_PUBLIC_KEY'] = 'AKIAIIM6SSIOQHA5E3AQ';
 $_ENV['AWS_SERVER_PRIVATE_KEY'] = '8O1tBUaniqxhPBjUVdbaV9AieFfj9oaxho+AOkKz';
 $_ENV['S3_BUCKET_NAME'] = 'dibyaautobase';
 $_ENV['S3_HOST_NAME'] = 'dibyaautobase.s3.amazonaws.com';
-$_ENV['S3_MAX_FILE_SIZE'] = null;
-$_ENV['S3_MAX_FILE_SIZE'] = null;
+
 
 
 // These assume you have the associated AWS keys stored in
