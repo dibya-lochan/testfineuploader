@@ -54,8 +54,9 @@ $expectedHostName = $_ENV['S3_HOST_NAME']; // v4-only
 // validation, then change this to match the integer value you specified
 // otherwise your policy document will be invalid.
 // http://docs.fineuploader.com/branch/develop/api/options.html#validation-option
-$expectedMaxSize = (isset($_ENV['S3_MAX_FILE_SIZE']) ? $_ENV['S3_MAX_FILE_SIZE'] : null);
-echo $clientPrivateKey;
+//$expectedMaxSize = (isset($_ENV['S3_MAX_FILE_SIZE']) ? $_ENV['S3_MAX_FILE_SIZE'] : null);
+$expectedMaxSize = null;
+echo var_dump($expectedMaxSize);
 exit;
 
 
