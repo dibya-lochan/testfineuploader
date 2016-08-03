@@ -24,8 +24,7 @@
 
 require '../../autoload.php';
 use Aws\S3\S3Client;
-echo 'hi dibya';
-exit;
+
 // These assume you have the associated AWS keys stored in
 // the associated system environment variables
 $clientPrivateKey = $_ENV['AWS_CLIENT_SECRET_KEY'];
