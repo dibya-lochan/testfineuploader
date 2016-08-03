@@ -55,9 +55,7 @@ $expectedHostName = $_ENV['S3_HOST_NAME']; // v4-only
 // otherwise your policy document will be invalid.
 // http://docs.fineuploader.com/branch/develop/api/options.html#validation-option
 //$expectedMaxSize = (isset($_ENV['S3_MAX_FILE_SIZE']) ? $_ENV['S3_MAX_FILE_SIZE'] : null);
-$expectedMaxSize = null;
-echo var_dump($expectedMaxSize);
-exit;
+
 
 
 $method = getRequestMethod();
@@ -116,7 +114,7 @@ function getRequestMethod() {
 // Only needed in cross-origin setups
 function handleCorsRequest() {
     // If you are relying on CORS, you will need to adjust the allowed domain here.
-    header('Access-Control-Allow-Origin: http://fineuploader.com');
+    header('Access-Control-Allow-Origin: http://testupload.app');
 }
 
 // Only needed in cross-origin setups
