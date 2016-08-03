@@ -25,6 +25,18 @@
 require '../../autoload.php';
 use Aws\S3\S3Client;
 
+
+//Setting the environment variables
+
+$_ENV['AWS_CLIENT_SECRET_KEY'] = 'CG5s5OV56idEHSiAhaMaKWBdJakcvhRC+3PMHRdO';
+$_ENV['AWS_SERVER_PUBLIC_KEY'] = 'AKIAIIM6SSIOQHA5E3AQ';
+$_ENV['AWS_SERVER_PRIVATE_KEY'] = '8O1tBUaniqxhPBjUVdbaV9AieFfj9oaxho+AOkKz';
+$_ENV['S3_BUCKET_NAME'] = 'dibyaautobase';
+$_ENV['S3_HOST_NAME'] = 'dibyaautobase.s3.amazonaws.com';
+$_ENV['S3_MAX_FILE_SIZE'] = null;
+$_ENV['S3_MAX_FILE_SIZE'] = null;
+
+
 // These assume you have the associated AWS keys stored in
 // the associated system environment variables
 $clientPrivateKey = $_ENV['AWS_CLIENT_SECRET_KEY'];
@@ -44,6 +56,10 @@ $expectedHostName = $_ENV['S3_HOST_NAME']; // v4-only
 // otherwise your policy document will be invalid.
 // http://docs.fineuploader.com/branch/develop/api/options.html#validation-option
 $expectedMaxSize = (isset($_ENV['S3_MAX_FILE_SIZE']) ? $_ENV['S3_MAX_FILE_SIZE'] : null);
+
+echo $expectedMaxSize;
+
+exit;
 
 $method = getRequestMethod();
 
