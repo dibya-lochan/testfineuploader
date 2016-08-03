@@ -56,7 +56,7 @@ $expectedHostName = $_ENV['S3_HOST_NAME']; // v4-only
 // http://docs.fineuploader.com/branch/develop/api/options.html#validation-option
 $expectedMaxSize = (isset($_ENV['S3_MAX_FILE_SIZE']) ? $_ENV['S3_MAX_FILE_SIZE'] : null);
 
-echo $expectedMaxSize;
+echo 'hi dibya';
 
 exit;
 
